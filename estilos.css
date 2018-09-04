@@ -66,6 +66,16 @@ footer ::selection,
   background-color: hotpink;
 }
 
+#tags span:hover {
+  cursor: pointer;
+}
+
+#tags span:active {
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
 a:link {
   color: orange;
 }

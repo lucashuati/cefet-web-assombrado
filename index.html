@@ -114,14 +114,12 @@
          estilizar este elemento no CSS e usada também no JavaScript para ocultar
          o vídeo depois que ele acaba -->
     <aside class="backdrop">
-      <video src="videos/vinheta.mp4" autoplay muted>
-      </video>
     </aside>
-    <button id="unmute">🔉</button>
+    <!-- <button id="unmute">🔉</button> -->
 
     <script>
       // faz o vídeo desaparecer de leve assim que terminar
-      let tempo = 11000;  // 11s, duração do vídeo
+      let tempo = 0;  // 11s, duração do vídeo
       setTimeout(() => {
         // faz o vídeo desaparecer colocando a classe .desaparecido
         document.querySelector('.backdrop').classList.add('desaparecido');
