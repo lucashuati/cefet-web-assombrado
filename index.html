@@ -27,6 +27,11 @@
          esconder este elemento até o vídeo acabar (tem uma regra CSS para
          ocultar quem tem .desaparecido)-->
     <main class="desaparecido">
+      <article class= "phantom">
+        <img class="boo" src="imgs/boo1.gif" />
+        <img class="boo" src="imgs/boo2.gif" />
+        <img class="boo" src="imgs/boo3.gif" />
+      </article>
       <!-- opa, <section> já é um elemento semântico. Dica: podemos
            dividir a página em 3 seções, e esta é uma delas -->
       <section id="tags">
@@ -43,19 +48,19 @@
       <section id="posts-principais">
         <h1>Principais Postagens</h1>
         <article class="post">
-          <img src="imgs/arvores.jpg" alt="">
           <h2 class="titulo">
             Conheça a Enigmática "Crooked Forest": Centenas de Árvores
             em uma Floresta Foram Entortadas por "Forças Misteriosas", na Polônia?
           </h2>
+          <img src="imgs/arvores.jpg" alt="">
           <time datetime="2017-05-09">09 de maio de 2017</time>
         </article>
         <article class="post">
-          <img src="imgs/ursa.jpg" alt="">
           <h2 class="titulo">
             O Mistério de Szenja: Uma Ursa Polar Morreu de "Coração Partido"
             ao ser Separada de Sua Companheira no SeaWorld, nos Estados Unidos?
           </h2>
+          <img src="imgs/ursa.jpg" alt="">
           <time datetime="2017-05-09">07 de maio de 2017</time>
         </article>
       </section>
@@ -96,7 +101,7 @@
           </h2>
         </article>
       </section>
-
+      <a id="voltar-topo" href="#topo-da-pagina">&#x2b06;</a>
     </main>
 
     <footer>
@@ -134,5 +139,6 @@
         e.currentTarget.classList.add('desaparecido');
       });
     </script>
+    <script src="boos.js"></script>
   </body>
 </html>
